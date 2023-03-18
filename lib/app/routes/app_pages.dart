@@ -1,3 +1,4 @@
+import 'package:calender_events/app/modules/add_event/add_event.dart';
 import 'package:calender_events/app/modules/splash/splash_landing.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -13,6 +14,8 @@ class RouteGenerator {
         return pagetransition(settings, const SplashScreen());
       case AppRoutes.splash:
         return pagetransition(settings, const SplashScreen());
+      case AppRoutes.addEvent:
+        return pagetransition(settings, const AddEventWidget());
     }
     return MaterialPageRoute(
         builder: (_) => const Scaffold(
